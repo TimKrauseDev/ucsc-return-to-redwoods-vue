@@ -1,0 +1,59 @@
+#meta-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	@include responsive(mobile) {
+		display: block;
+	}
+}
+
+#meta-menu {
+	ul {
+		text-align: right;
+
+		@include responsiveSet(380px) {
+			text-align: center;
+		}
+
+		li {
+			@include font-size(16);
+			line-height: normal;
+			padding: 0 15px;
+			position: relative;
+
+			@include responsive(mobile) {
+				display: block;
+				padding: 8px;
+			}
+
+			a {
+				color: $color-a-meta;
+				text-decoration: none;
+				
+				&:hover, 
+				&:focus-visible {
+					color: $color-a-meta-hover;
+				}
+			}
+		}
+
+		li.button {
+			padding: 0;
+
+			a {
+				background-color: $background-color-btn-meta;
+				color: $color-btn-meta;
+				display: inline-block;
+				padding: 10px;
+				position: relative;
+				
+				&:hover {
+					background-color: $background-color-btn-meta-hover;
+					color: $color-btn-meta-hover;
+				}
+			}
+		}
+
+	}
+}

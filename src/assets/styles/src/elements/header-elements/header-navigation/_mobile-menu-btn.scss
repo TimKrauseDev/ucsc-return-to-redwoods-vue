@@ -1,0 +1,59 @@
+#menu-btn {
+	display: none;
+	@include responsive(mobile){
+		cursor: pointer;
+		display: block;
+		float: right;
+		height: 30px;
+		padding: 5px;
+		position: relative;
+		right: $grid-gutter - 5;
+		width: 42px;
+        margin-top: 24px;
+		background: transparent;
+		border:none;
+
+        @include responsiveBelow(500px) { margin-top: 0; }
+
+		span.text{
+			display: none;
+		}
+
+		span, span:before, span:after{
+			width: 32px;
+			height: 2px;
+			display: block;
+			position: absolute;
+			content: '';
+			background-color:$background-color-menu-btn;
+		}
+		span:before {
+			top: -8px;
+		}
+		span:after {
+			bottom: -8px;
+		}
+		&:hover, &:focus-visible{
+			span, span:before, span:after{
+				background-color:$background-color-menu-btn-hover;
+			}
+		}
+		&:focus-visible{}
+		&.active{
+            span, span:before, span:after { @include all(); }
+			span{
+				background-color: transparent;
+			}
+			span:before, span:after {
+				top: 0px;
+				background-color:$background-color-menu-btn-hover;
+			}
+			span:after {
+				transform: rotate(-45deg);
+			}
+			span:before {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.housing-section {
+    padding: 60px 0 250px 0;
+    background-color: $color-primary;
+    position: relative;
+
+    @include responsive(mobile) { padding: 60px 0 200px 0; }
+
+    .housing-title, .lead {
+        text-align: center;
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $color-white;
+    }
+    .housing-title { margin-bottom: 60px; }
+
+    .card-row {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .topography-overlay { filter: brightness(0); }
+}

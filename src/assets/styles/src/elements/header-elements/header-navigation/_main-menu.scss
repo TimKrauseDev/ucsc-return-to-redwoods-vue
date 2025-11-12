@@ -1,0 +1,123 @@
+#main-menu-wrapper {}
+
+#main-menu {
+	ul {
+		text-align: right;
+		padding: 0;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		justify-content: space-between;
+        align-items: center;
+
+		@include responsive(mobile){ display: block; }
+
+		@include responsiveSet(380px) { text-align: center; }
+
+		li {
+			position: relative;
+			@include responsive(mobile) {
+                margin: 10px 0;
+                display: block;
+            }
+
+			a {
+				font-weight: 700;
+				color: $color-a-menu;
+				text-decoration: none;
+                text-transform: uppercase;
+                @include font-size(12);
+                @include line-height(14);
+				letter-spacing: 0.03rem;
+				&:hover, &:focus-visible { color: $color-a-menu-hover; }
+
+				@include responsive(mobile) {
+					display: block;
+					padding: 5px 0;
+					&:hover {}
+				}
+			}
+
+
+			/*Sub Menus - Main navigation dropdowns*/
+			@import "main-sub-menu";
+
+
+			&.last-item {
+				ul {
+					right: 0;
+					text-align: right;
+					left: auto;
+					@include responsiveSet(380px) { text-align: center; }
+				}
+			}
+		}
+
+		li.button {
+			padding: 0;
+            display: inline-block;
+
+            @include responsive(mobile) {
+                margin: 0;
+            }
+
+			a {
+				background-color: $color-secondary;
+				color: $color-primary;
+				display: inline-block;
+				padding: 0.625rem 1.5rem;
+				position: relative;
+
+				&:hover {
+					background-color: darken($color-secondary, 5%);
+				}
+			}
+		}
+
+		li.active > a, li.current-menu-item > a, li.current-menu-ancestor > a, li.current-menu-parent > a {
+			color: $color-a-menu-hover;
+		}
+
+		li.no-link > a {
+			cursor: text;
+			&:focus-visible {
+				box-shadow: none;
+				outline: none;
+			}
+		}
+
+		li:hover > ul {
+			display: block;
+			@include responsive(mobile) {
+				display: none;
+			}
+		}
+
+        li.alumni {
+            display: flex;
+            .alumni-logo { display: inline-block; }
+        }
+	}
+
+	.submenu-icon {
+		display: none;
+
+		@include responsive(mobile) {
+			@include all();
+			background-color: transparent;
+			border: none;
+			color: $color-a-menu;
+			display: block;
+			left: 5px;
+			padding: 0;
+			position: absolute;
+			top: 2px;
+
+			&.on {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+}

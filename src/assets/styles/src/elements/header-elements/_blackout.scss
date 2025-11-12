@@ -1,0 +1,13 @@
+#blackout {
+	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 8;
+	&.on{
+		display: block;
+	}
+}

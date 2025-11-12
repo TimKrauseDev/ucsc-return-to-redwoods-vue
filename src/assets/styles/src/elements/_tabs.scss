@@ -1,0 +1,68 @@
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.tabs {
+	margin: 20px $grid-gutter 0;
+	table.table {
+		min-width: 590px;
+	}
+}
+
+.tab-titles {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+
+    @include responsive(mobile) {
+        flex-direction: column;
+    }
+}
+
+.tab-title {
+	@include font-size($font-size-tab-title);
+	@include link();
+	background-color: $background-color-tab;
+	border: none;
+	color: $color-tab;
+	cursor: pointer;
+	display: block;
+	line-height: normal;
+	padding: toRem(20) toRem(79);
+	text-transform: uppercase;
+
+    @include responsiveBelow(1000px) {
+        padding: toRem(20) toRem(50);
+    }
+
+	&.active {
+		background-color: $background-color-tab-active;
+		border: none;
+		color: $color-tab-active;
+	}
+
+	&:hover,
+    &:focus-visible {
+		background-color: $background-color-tab-focus;
+		border: none;
+		box-shadow: none;
+		color: $color-tab-focus;
+	}
+}
+
+.tab-content-wrapper {
+    position: relative;
+    background-color: lighten($color-tertiary, 2%);
+}
+
+
+.tab-content {
+	padding: 90px 0;
+	animation: fadeEffect 0.5s;
+	&.hide { display: none; }
+}
