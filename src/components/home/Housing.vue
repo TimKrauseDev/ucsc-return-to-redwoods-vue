@@ -101,7 +101,7 @@ import imgOffCampus from '@/assets/img/img-off_campus_housing.jpg'
                   href="https://www.santacruz.org/places-to-stay/"
                   target="_blank"
                   ref="noreferrer noopener"
-                >View Options<i class="fa fa-chevron-right"></i></a></p>
+                >View Options<i class="pi pi-chevron-right" style="margin-left: 0.5rem;"></i></a></p>
             </div>
           </article><!--End Card-->
         </div><!--End Single Card Column-->

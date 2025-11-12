@@ -57,7 +57,7 @@ import video from '@/assets/img/ucsc-arial.mp4'
                 href="https://news.ucsc.edu/2023/08/return-to-the-redwoods.html"
                 target="_blank"
                 ref="noreferrer noopener"
-              >In the News<i class="fa fa-chevron-right"></i></a>
+              >In the News<i class="pi pi-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -67,8 +67,8 @@ import video from '@/assets/img/ucsc-arial.mp4'
               <span
                 class="play-text"
                 aria-hidden="true"
-              ><i class="fas fa-play"></i>Play video</span>
-              <span class="pause-text"><i class="fas fa-pause"></i>Pause Video</span>
+              ><i class="pi pi-play"></i>Play video</span>
+              <span class="pause-text"><i class="pi pi-pause"></i>Pause Video</span>
             </button>
           </div>
         </div>

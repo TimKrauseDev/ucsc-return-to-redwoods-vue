@@ -1,5 +1,5 @@
 .topography-overlay {
-    background-image: url('../img/topography-map-bg.png');
+    background-image: url('@/assets/img/topography-map-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@
 
 
 .treeline-overlay {
-    background-image: url('../img/treeline.png');
+    background-image: url('@/assets/img/treeline.png');
     background-position: top left;
     background-repeat: repeat-x;
     width: 100%;

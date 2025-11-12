@@ -39,7 +39,7 @@ import { RouterLink } from 'vue-router'
           <p><RouterLink
               class="button button-outline"
               to="/schedule#friday"
-            >View Full schedule<i class="fa fa-chevron-right"></i></RouterLink></p>
+            >View Full schedule<i class="pi pi-chevron-right" style="margin-left: .5rem"></i></RouterLink></p>
         </div>
       </article><!--End Card-->
 
@@ -67,7 +67,7 @@ import { RouterLink } from 'vue-router'
           <p><RouterLink
               class="button button-outline"
               to="/schedule#saturday"
-            >View Full schedule<i class="fa fa-chevron-right"></i></RouterLink></p>
+            >View Full schedule<i class="pi pi-chevron-right" style="margin-left: 0.5rem;"></i></RouterLink></p>
         </div>
       </article><!--End Card-->
 
@@ -94,7 +94,7 @@ import { RouterLink } from 'vue-router'
           <p><RouterLink
               class="button button-outline"
               to="/schedule#sunday"
-            >View Full schedule<i class="fa fa-chevron-right"></i></RouterLink></p>
+            >View Full schedule<i class="pi pi-chevron-right" style="margin-left: 0.5rem;"></i></RouterLink></p>
         </div>
       </article><!--End Card-->
 

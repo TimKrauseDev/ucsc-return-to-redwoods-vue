@@ -47,13 +47,13 @@
           href="https://www.flickr.com/photos/ucsantacruz/sets/72177720310842359/"
           target="_blank"
           ref="noreferrer noopener"
-        >View All Event Photos<i class="fa fa-chevron-right"></i></a>
+        >View All Event Photos<i class="pi pi-chevron-right" style="margin-left: 0.5rem;"></i></a>
         <a
           class="button button-outline"
           href="https://dropevent.com/ReturnToTheRedwoods/upload"
           target="_blank"
           ref="noreferrer noopener"
-        >Upload Your Photos<i class="fa fa-chevron-right"></i></a>
+        >Upload Your Photos<i class="pi pi-chevron-right" style="margin-left: 0.5rem;"></i></a>
       </div>
 
     </div>
