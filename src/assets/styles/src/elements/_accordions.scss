@@ -3,8 +3,8 @@ $accordion-paddingX: calc($gap + 10px); // width of $gap + plus;
 .accordion-block {
 	border-bottom: $border-color-acc-bottom;
 	border-top: $border-color-acc-top;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	// margin-bottom: 10px;
+	// margin-top: 10px;
 
 	button.accordion-button, .accordion-button {
 		@include link();
@@ -20,42 +20,18 @@ $accordion-paddingX: calc($gap + 10px); // width of $gap + plus;
 		text-transform: none;
 		width: 100%;
 
-		.accordion-title {
-			@include font-size($font-size-acc-title);
-			@include line-height($line-height-acc-title);
-			@include link();
-            font-family: $inter;
-			display: block;
-			margin: 0;
-			padding: 0;
-		}
+    @include font-size($font-size-acc-title);
+    font-family: $inter;
 
-		.accordion-icon {
-			@include all();
-			@include font-size($font-size-acc-icon);
-			display: block;
-			position: absolute;
-            left: 0;
-            top: 19px;
-			&::after {
-				content: "\f067";
-				display: inline-block;
-				font-family: "Font Awesome 5 Pro";
-				font-style: normal;
-				font-variant: normal;
-				font-weight: 700;
-				line-height: 1;
-				text-rendering: auto;
-			}
-		}
+    span {
+      @include all();
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 20px;
+      font-size: 12px;
+    }
 
-		&.on {
-			background-color: $background-color-acc-title-active !important;
-			color: $color-acc-title-hover !important;
-			.accordion-icon {
-				transform: rotate(135deg);
-			}
-		}
 
 		&:hover, &:focus-visible {
 			background-color: $background-color-acc-title-active !important;
@@ -63,10 +39,9 @@ $accordion-paddingX: calc($gap + 10px); // width of $gap + plus;
 		}
 	}
 
-	.accordion-content {
-		display: none;
-		padding: 0 $accordion-paddingX $row-gutter;
-	}
+  .accordion-content {
+    padding: 0 $accordion-paddingX 1rem;
+  }
 
 	&.first {}
 	&.last {}
