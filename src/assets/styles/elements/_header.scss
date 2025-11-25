@@ -1,0 +1,25 @@
+#header{
+	width: 100%;
+	z-index: 99;
+	display: block;
+	position: absolute;
+    top: 0;
+    left: 0;
+	background-color: rgba($background-color-header, .9);
+
+    @include responsive(mobile) {
+        position: relative;
+        background-color: $background-color-header;
+    }
+
+	.row-flex, .row {
+		padding-top: $row-gutter;
+		padding-bottom: $row-gutter;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		@include responsive(mobile){
+			display: block;
+		}
+	}
+}

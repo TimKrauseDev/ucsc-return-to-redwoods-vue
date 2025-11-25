@@ -1,0 +1,143 @@
+@use "sass:color";
+
+#footer {
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    background-color: $background-color-footer;
+    color: $color-footer-text;
+
+    hr {
+        height: 1px;
+        background-color: rgba($color-white, 25%);
+        margin: $row-gutter 0;
+    }
+
+    .footer-top {}
+    .footer-bottom {}
+    .footer-block {}
+
+    .footer-branding{
+    	a{
+    		display: inline-flex;
+            flex-wrap: wrap;
+            gap: 15px;
+    	}
+    }
+
+    .copyright {
+        font-family: $inter;
+        text-transform: uppercase;
+        @include font-size(12);
+        color: #BABABA;
+    }
+
+    .tos {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        font-family: $inter;
+        text-transform: uppercase;
+
+        @include responsive(mobile) { justify-content: flex-start; }
+
+        a {
+            @include font-size(12);
+            color: $color-white;
+            text-decoration: none;
+
+            &:hover,
+            &:focus-visible {
+                color: $color-secondary;
+            }
+        }
+
+        span {
+            @include font-size(12);
+            color: $color-white;
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: flex-start;
+
+        ul.menu {
+            width: 100%;
+            text-align: right;
+            padding: 0;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: space-between;
+            align-items: center;
+
+            @include responsive(mobile) {
+                justify-content: flex-start;
+                gap: 0 $row-gutter;
+            }
+
+            li {
+                position: relative;
+
+                @include responsive(mobile) { margin: 10px 0; }
+
+                a {
+                    font-weight: 700;
+                    color: $color-a-menu;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    @include font-size(12);
+                    letter-spacing: 0.03rem;
+
+                    &:hover, &:focus-visible { color: $color-a-menu-hover; }
+                }
+
+                &.last-item {
+                    ul {
+                        right: 0;
+                        text-align: right;
+                        left: auto;
+
+                        @include responsiveSet(380px) { text-align: center; }
+                    }
+                }
+            }
+
+            li.button {
+                padding: 0;
+                display: inline;
+
+                a {
+                    background-color: $color-secondary;
+                    color: $color-primary;
+                    display: inline-block;
+                    padding: 0.625rem 1.5rem;
+                    position: relative;
+
+                    &:hover {
+
+                      background-color: color.adjust($color-secondary, $lightness: -5%);
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-footer-link;
+
+            &:hover {
+                color: $color-footer-link-hover;
+            }
+        }
+    }
+
+    .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

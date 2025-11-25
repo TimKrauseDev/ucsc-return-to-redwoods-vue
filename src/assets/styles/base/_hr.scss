@@ -1,0 +1,27 @@
+hr {
+	background-color: $background-color-hr;
+	border: none !important;
+	clear: both;
+	color: $color-hr;
+	height: 3px;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	opacity: 1;
+	outline: 0;
+	position: relative;
+
+    &.bg-primary { background-color: $color-primary; }
+
+    &.hr-event {
+        max-width: 741px;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: $color-primary;
+
+        &.hr-event-end {
+            margin-bottom: 50px;
+        }
+    }
+}

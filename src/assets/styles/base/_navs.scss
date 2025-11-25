@@ -1,0 +1,28 @@
+nav {
+	ul, ol {
+		margin: 0;
+		padding: 0;
+		border: none;
+		li {
+			display: inline-block;
+			padding: 0;
+			text-indent: 0;
+			&::before {
+				content: "";
+				padding: 0;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+			a {
+				position: relative;
+				&:focus {
+					z-index: 1;
+				}
+			}
+		}
+	}
+}

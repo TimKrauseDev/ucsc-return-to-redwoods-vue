@@ -1,0 +1,26 @@
+body {
+	-moz-font-feature-settings:'liga';
+	-ms-font-feature-settings:'liga';
+	-ms-text-size-adjust: 100%;
+	-webkit-font-feature-settings:'liga';
+	-webkit-text-size-adjust: 100%;
+
+	@include font-size($font-size-body);
+	@include line-height($line-height-body);
+
+	background-color: $background-color-body;
+	color: $color-body;
+
+	font-family: $main-font;
+	font-feature-settings:'liga';
+	font-weight: $font-weight-body;
+
+	height: 100%;
+	position: relative;
+	text-rendering: optimizeLegibility;
+	width: 100%;
+	
+	&.nav-open{
+		overflow: hidden;
+	}
+}

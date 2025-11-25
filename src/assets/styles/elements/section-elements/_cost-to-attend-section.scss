@@ -1,0 +1,9 @@
+.cost-to-attend-section {
+    padding: 30px 0 60px;
+
+    .section-title {
+        margin-bottom: 60px;
+
+        @include responsive(mobile) { text-align: center; }
+    }
+}

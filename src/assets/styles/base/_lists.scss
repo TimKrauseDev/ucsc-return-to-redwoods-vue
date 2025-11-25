@@ -1,0 +1,46 @@
+dl, menu, ol, ul { margin: 1rem 0; }
+
+dd, ul ul, ol ol, ul ol, ol ul { margin: 0;}
+
+dt { font-style: normal; }
+
+dd { margin-bottom: 1rem; }
+
+menu, ol, ul { padding: 0 0 0 1.3rem; }
+
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+
+ul {
+	list-style: disc;
+	margin: .33rem 0 .33rem .9rem;
+	padding: 0;
+	li {
+		display: list-item;
+		padding: 0.1rem 0;
+		ul{list-style: circle;}
+		ol{list-style: decimal;}
+		ul, ol {
+			padding-left: 0.9rem;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+ol {
+	list-style: decimal;
+	margin: .33rem 0 .33rem .9rem;
+	padding: 0;
+	li {
+		display: list-item;
+		padding: 0.1rem 0;
+		ol, ul { 			
+			padding-left: 0.9rem;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+}

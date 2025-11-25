@@ -31,11 +31,12 @@
 Utilities - make sure you import variables first
 --------------------------------------------------------------------------
 */
+
 @import
-	"src/utils/variables",
-	"src/utils/mixins",
-	"src/utils/functions",
-	"src/utils/helpers";
+	"utils/variables",
+	"utils/mixins",
+	"utils/functions",
+	"utils/helpers";
 
 
 /*
@@ -44,18 +45,18 @@ Base default styles - reset goes first
 --------------------------------------------------------------------------
 */
 @import
-	"src/base/reset",
-	"src/base/body",
-	"src/base/typography",
-	"src/base/buttons",
-	"src/base/figcaption",
-	"src/base/forms",
-	"src/base/headings",
-	"src/base/hr",
-	"src/base/lists",
-	"src/base/navs",
-	"src/base/quotes",
-	"src/base/tables";
+	"base/reset",
+	"base/body",
+	"base/typography",
+	"base/buttons",
+	"base/figcaption",
+	"base/forms",
+	"base/headings",
+	"base/hr",
+	"base/lists",
+	"base/navs",
+	"base/quotes",
+	"base/tables";
 
 
 /*
@@ -64,10 +65,10 @@ Layout responsive grid styles
 --------------------------------------------------------------------------
 */
 @import
-	"src/layout/grid",
-	"src/layout/grid-large",
-	"src/layout/grid-medium",
-	"src/layout/grid-mobile";
+	"layout/grid",
+	"layout/grid-large",
+	"layout/grid-medium",
+	"layout/grid-mobile";
 
 
 /*
@@ -76,9 +77,7 @@ Libraries - vendor styles
 --------------------------------------------------------------------------
 */
 @import
-	//"src/libraries/animate/animate",
-	//"src/libraries/fontawesome/scss/all",
-	"src/libraries/fontawesome/scss/custom";
+	"libraries/fontawesome/scss/custom";
 
 
 /*
@@ -87,10 +86,9 @@ jQuery Plugins - vendor styles
 --------------------------------------------------------------------------
 */
 @import
-	"src/plugins/fancybox/fancybox",
-	//"src/plugins/bg-video/bg-video",
-	"src/plugins/slick/slick",
-	"src/plugins/slick/slick-theme";
+	"plugins/fancybox/fancybox",
+	"plugins/slick/slick",
+	"plugins/slick/slick-theme";
 
 
 /*
@@ -100,37 +98,37 @@ Elements - Basically everything else
 */
 @import
 	/*Header styles and elements typically inside the main header*/
-	"src/elements/header",
-	"src/elements/header-elements/skip-link",
-	"src/elements/header-elements/site-branding",
-	"src/elements/header-elements/searchform",
-	"src/elements/header-elements/blackout",
-	"src/elements/header-elements/header-navigation/main-menu",
-	"src/elements/header-elements/header-navigation/meta-menu",
-	"src/elements/header-elements/header-navigation/mobile-menu-btn",
-	"src/elements/header-elements/header-navigation/navigation-wrapper",
+	"elements/header",
+	"elements/header-elements/skip-link",
+	"elements/header-elements/site-branding",
+	"elements/header-elements/searchform",
+	"elements/header-elements/blackout",
+	"elements/header-elements/header-navigation/main-menu",
+	"elements/header-elements/header-navigation/meta-menu",
+	"elements/header-elements/header-navigation/mobile-menu-btn",
+	"elements/header-elements/header-navigation/navigation-wrapper",
 	/*Main*/
-	"src/elements/main",
-    /*Sections*/
-    "src/elements/section-elements/intro-section",
-    "src/elements/section-elements/cost-to-attend-section",
-    "src/elements/section-elements/faq-section",
-    "src/elements/section-elements/events-section",
-    "src/elements/section-elements/housing-section",
-    "src/elements/section-elements/recap-section",
-    "src/elements/section-elements/schedule-section",
-    "src/elements/section-elements/whos-coming-section",
+	"elements/main",
+  /*Sections*/
+  "elements/section-elements/intro-section",
+  "elements/section-elements/cost-to-attend-section",
+  "elements/section-elements/faq-section",
+  "elements/section-elements/events-section",
+  "elements/section-elements/housing-section",
+  "elements/section-elements/recap-section",
+  "elements/section-elements/schedule-section",
+  "elements/section-elements/whos-coming-section",
 	/*Footer*/
-	"src/elements/footer",
+	"elements/footer",
 	/*Misc*/
-	"src/elements/accordions",
-	"src/elements/bg-video",
-	"src/elements/card",
-	"src/elements/lead",
-	"src/elements/page-banner",
-	"src/elements/popups",
-	"src/elements/overlays",
-	"src/elements/tabs";
+	"elements/accordions",
+	"elements/bg-video",
+	"elements/card",
+	"elements/lead",
+	"elements/page-banner",
+	"elements/popups",
+	"elements/overlays",
+	"elements/tabs";
 
 /*
  .d8888b.  888     888  .d8888b. 88888888888 .d88888b.  888b     d888
