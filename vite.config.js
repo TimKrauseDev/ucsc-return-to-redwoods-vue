@@ -10,6 +10,14 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['global-builtin', 'color-functions', 'import'],
+        quietDeps: true,
+      }
+    }
+  },
   server: {
     port: 3000,
   },
