@@ -1,7 +1,6 @@
 <script setup>
-import Events from '@/components/schedule/Events.vue';
-import PageBanner from '@/components/schedule/PageBanner.vue';
-
+import Events from "../components/blocks/Events.vue";
+import PageBanner from "@/components/schedule/PageBanner.vue";
 </script>
 
 <template>
