@@ -1,8 +1,8 @@
 <script setup>
-import Header from '@/components/global/Header.vue';
-import Footer from '@/components/global/Footer.vue';
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
 
-import { RouterView } from 'vue-router';
+import { RouterView } from "vue-router";
 </script>
 
 <template>
@@ -11,4 +11,4 @@ import { RouterView } from 'vue-router';
   <Footer />
 </template>
 
-<style scoped></style>
+<style></style>
